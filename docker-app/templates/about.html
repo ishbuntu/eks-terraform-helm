@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}About - My Portfolio{% endblock %}
+
+{% block content %}
+<h1>About Me</h1>
+<div class="row mt-4">
+    <div class="col-md-8">
+        <p class="lead">I'm a DevOps engineer passionate about cloud infrastructure and automation.</p>
+        <p>This portfolio site demonstrates my skills in:</p>
+        <ul>
+            <li><strong>Docker</strong> - Containerization for consistent application deployment</li>
+            <li><strong>Flask</strong> - Python web framework for building web applications</li>
+            <li><strong>Ansible</strong> - Configuration management and automation</li>
+            <li><strong>Terraform</strong> - Infrastructure as Code for AWS</li>
+            <li><strong>CI/CD</strong> - Continuous integration and deployment practices</li>
+        </ul>
+        <p>The architecture of this site includes:</p>
+        <ul>
+            <li>AWS EC2 instance provisioned with Terraform</li>
+            <li>Configuration managed by Ansible</li>
+            <li>Application containerized with Docker</li>
+            <li>Flask web application with templates</li>
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Skills</h5>
+                <div class="mb-2">
+                    <span>Docker</span>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <span>Ansible</span>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <span>Terraform</span>
+                    <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <span>AWS</span>
+                    <div class="progress">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

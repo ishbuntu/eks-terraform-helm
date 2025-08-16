@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}Projects - My Portfolio{% endblock %}
+
+{% block content %}
+<h1>My Projects</h1>
+<p class="lead">Here are some of the projects I've worked on:</p>
+
+<div class="row mt-4">
+    <div class="col-md-6 mb-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">This Portfolio Site</h5>
+                <h6 class="card-subtitle mb-2 text-muted">DevOps Project</h6>
+                <p class="card-text">A containerized Flask application deployed on AWS using Terraform and Ansible for infrastructure automation.</p>
+                <p><strong>Technologies:</strong> Docker, Flask, Ansible, Terraform, AWS</p>
+                <a href="#" class="card-link">View Architecture</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mb-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Microservices Demo</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Cloud Architecture</h6>
+                <p class="card-text">A demonstration of microservices architecture using Docker Compose with multiple interconnected services.</p>
+                <p><strong>Technologies:</strong> Docker Compose, Node.js, MongoDB, Redis</p>
+                <a href="#" class="card-link">View Project</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mb-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">CI/CD Pipeline</h5>
+                <h6 class="card-subtitle mb-2 text-muted">DevOps Automation</h6>
+                <p class="card-text">Automated testing and deployment pipeline using GitHub Actions for continuous integration and delivery.</p>
+                <p><strong>Technologies:</strong> GitHub Actions, Docker, AWS ECR, AWS ECS</p>
+                <a href="#" class="card-link">View Pipeline</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mb-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Infrastructure Monitoring</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Observability</h6>
+                <p class="card-text">Comprehensive monitoring solution using Prometheus and Grafana for infrastructure and application metrics.</p>
+                <p><strong>Technologies:</strong> Prometheus, Grafana, Node Exporter, AlertManager</p>
+                <a href="#" class="card-link">View Dashboard</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Home - My Portfolio{% endblock %}
+
+{% block content %}
+<div class="jumbotron bg-light p-5 rounded">
+    <h1 class="display-4">Welcome to My Portfolio</h1>
+    <p class="lead">This is a showcase of my DevOps and cloud infrastructure skills.</p>
+    <hr class="my-4">
+    <p>This site is deployed using Docker, Ansible, and Terraform on AWS.</p>
+    <a class="btn btn-primary btn-lg" href="/projects" role="button">View My Projects</a>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Docker</h5>
+                <p class="card-text">Containerized applications for consistent deployment across environments.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Ansible</h5>
+                <p class="card-text">Automated configuration management and application deployment.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Terraform</h5>
+                <p class="card-text">Infrastructure as Code for reliable cloud resource provisioning.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
